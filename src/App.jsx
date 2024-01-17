@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react';
 import {
   Chart as ChartJS,
   LineElement,
@@ -11,7 +11,6 @@ import {
 
 import { Line, getElementsAtEvent } from 'react-chartjs-2'
 import './App.css'
-import { useState } from 'react'
 import { fetchApiGosat } from './service/api'
 
 ChartJS.register(
